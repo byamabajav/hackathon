@@ -4,6 +4,7 @@ import "./globals.css";
 import { ApolloWrapper } from "@/lib/apollo/ApolloClient";
 import { NextAuthProvider, authOptions } from "@/lib/next-auth";
 import { getServerSession } from "next-auth";
+import themeConfig from "@/configs/themeConfig";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,15 @@ export default async function RootLayout({
 
   return (
     <html lang="en">
+      <meta
+        name="description"
+        content={`${themeConfig.templateName} – Material Design React Admin Dashboard Template – is the most developer friendly & highly customizable Admin Dashboard Template based on MUI v5.`}
+      />
+      <meta
+        name="keywords"
+        content="Material Design, MUI, Admin Template, React Admin Template"
+      />
+      <meta name="viewport" content="initial-scale=1, width=device-width" />
       <body className={inter.className}>
         {children}
         {/* <ApolloWrapper>
