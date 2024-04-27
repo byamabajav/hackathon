@@ -10,6 +10,7 @@ export default function Home() {
       take: 5,
     },
   });
+  //buynaa
   return (
     <div>
       <h1>Home</h1>
