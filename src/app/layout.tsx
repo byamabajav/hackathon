@@ -22,9 +22,10 @@ export default async function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <ApolloWrapper>
+        {children}
+        {/* <ApolloWrapper>
           <NextAuthProvider session={session}>{children}</NextAuthProvider>
-        </ApolloWrapper>
+        </ApolloWrapper> */}
       </body>
     </html>
   );
